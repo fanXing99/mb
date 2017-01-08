@@ -1,3 +1,1 @@
-# -
-
-![](面包/7EE0A098-3FDF-4F1B-B612-E3BD04280127.png =320*580)
+<img src="面包/7EE0A098-3FDF-4F1B-B612-E3BD04280127.png" width = "320" height = "580" alt="" align=center />
