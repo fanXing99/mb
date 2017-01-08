@@ -1,0 +1,28 @@
+<import src="../../components/trip/trip.wxml"/>
+
+<view class="cont">
+  <image  class="imagec" mode="aspectFill"  src="{{ user_info.cover }}" style="width: {{ windowWidth }}px;"></image>
+    <view class="topView">
+      <view class="user_head">
+          <view class="leftView">
+                <text>{{ user_info.followers_count }}</text>
+                <text>粉丝</text>
+            </view>
+            <image mode="aspectFill" src="{{ user_info.avatar_l }}"></image>
+            <view class="rightView">
+                <text>{{user_info.followings_count}}</text>
+                <text>关注</text>
+            </view>
+      </view>
+      <view class="user_name"><text>{{ user_info.name }}</text></view>
+    </view>
+    <view class="footerView">
+       <view class="trip-title">游记<view class="count">{{ trips.length }}</view></view>
+    <block wx:for="{{ trips }}" wx:for-item="trip">
+            <template is="m-trip" data="{{trip: trip, mode: 2}}"/>
+    </block>
+    </view>
+</view>
+
+
+

@@ -1,0 +1,24 @@
+<template name="m-trip"> 
+<view  class="m-trip" bindtap="viewTrip" data-id="{{trip.id}}" data-name="{{trip.name}}">
+ <image class="cover" src="{{ trip.cover_image_w640 }}" background-size="cover"></image>
+
+ <view class="info">
+    <view>
+    <text>{{trip.name}}</text>
+    </view>
+    <view class="headline">
+     <text wx:if="{{mode === 1}}">{{trip.date_added }} {{ trip.day_count }}天 {{trip.view_count}}次浏览 </text>
+     <text wx:else>{{trip.date_added }} {{ trip.day_count }}天 </text>
+     <text>{{trip.popular_place_str}}</text>
+    </view>
+ </view>
+  <view class="userInfo"> 
+  
+   <view class="bottom" wx:if="{{ mode === 2 }}">{{ trip.view_count }}次浏览 / {{ trip.liked_count }}喜欢 / {{ trip.total_comments_count }}评论</view>
+
+    <image src="{{ trip.user.avatar_l }}"></image>
+    <text>{{ trip.user.name }}</text>
+
+    </view>
+</view>
+ </template>

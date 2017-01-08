@@ -1,0 +1,103 @@
+
+
+.clear{
+    clear: both;
+}
+
+
+page{
+    background: rgb(252, 248, 241);
+}
+.trip{
+
+
+}
+
+.trip-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 40rpx;
+}
+.trip-top .trip-user{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+}
+.trip-top  .trip-info{
+    margin-left: 20rpx;
+}
+
+.trip-top  .trip-info .trip-info-name{
+    font-size: 20px;
+    color: lightseagreen;
+}
+.trip-top  .trip-info .detail{
+    margin-top: 10rpx;
+      font-size: 10px;
+      color:lightgrey;
+}
+
+
+.listView{
+    margin: 30rpx;
+}
+.listView .container{
+
+}
+.listView .day-mark{
+color: rgb(181, 159, 111);
+font-weight: bold;
+font-size: 35rpx;
+}
+.listView .day-mark .day-op{
+ display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  border: 8rpx solid #e7ddc6;
+  margin: 0 8rpx;
+  vertical-align: text-bottom;
+
+}
+.listView .day_line{
+    float: left;
+    background-color: #e7ddc6;
+    margin: 0 18rpx;
+    width: 10rpx;
+    height: 50rpx;
+}
+.info {
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+     border-bottom: 6rpx solid #e7e7e7;
+}
+.info image{
+    width: 30rpx;
+    height: 30rpx;
+    margin: 20rpx;
+    margin-right: 10rpx;
+    margin-left: 13rpx
+}
+
+.info text{
+    font-size: 22rpx;
+}
+.wxt{
+    font-size: 32rpx;
+    padding-top: 20rpx;
+    margin-left: 13rpx;
+}
+.cont {
+    background: #ffffff;
+}
+.sd {
+     float: left;
+    background-color: #e7ddc6;
+    margin: 0 18rpx;
+    width: 10rpx;
+    height: 50rpx;
+}

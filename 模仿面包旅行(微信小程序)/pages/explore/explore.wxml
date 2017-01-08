@@ -1,0 +1,16 @@
+<view class="content">
+        <view wx:for="{{elements}}" class="item">
+            <text class="title">{{item.title}}</text>
+            <view class="list">
+            <block wx:for="{{item.data }}" wx:for-item="poi">
+                <view  data-type="{{ poi.type }}" data-id="{{ poi.id }}" data-name="{{ poi.name }}" bindtap="viewPOI" style="height:{{windowHeight}}px; width:{{windowWidth}}px" class="list_item">
+                    <image src="{{ poi.cover_s }}"></image>
+                    <view class="mask"></view>
+                    <text>{{poi.name}}</text>
+                </view> 
+            </block>
+            </view>
+        </view>
+</view>
+
+
